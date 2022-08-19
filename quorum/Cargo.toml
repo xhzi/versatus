@@ -6,3 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = { version = "0.8.5", features = ["getrandom"] }
+hbbft = { git = "https://github.com/vrrb-io/hbbft", branch = "master" }
+threshold_crypto = { version = "0.4", git = "https://github.com/poanetwork/threshold_crypto" }
+rand_core = { version = "0.6.3", features = ["getrandom"] }
